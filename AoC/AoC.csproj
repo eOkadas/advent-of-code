@@ -6,7 +6,7 @@
         <Title>Advent Of Code automaton</Title>
         <Authors>Cyrille DUPUYDAUBY</Authors>
         <Description>Provides a skeleton automaton that will ease doing the AoC puzzles in C#.</Description>
-        <TargetFrameworks>net6.0;netstandard2.1</TargetFrameworks>
+        <TargetFrameworks>net7.0;netstandard2.1</TargetFrameworks>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageProjectUrl>https://github.com/dupdob/AocAutomaton</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -22,7 +22,7 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="System.IO.Abstractions" Version="16.1.10" />
+        <PackageReference Include="System.IO.Abstractions" Version="18.0.1" />
     </ItemGroup>
 
     <ItemGroup>

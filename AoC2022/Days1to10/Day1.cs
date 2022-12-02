@@ -26,6 +26,7 @@ public class Day1 : SolverWithLineParser
 10000
 ";
         automaton.RegisterTestDataAndResult(testData, expected: 24000, 1);
+        
         automaton.RegisterTestDataAndResult(testData, expected: 45000, 2);
     }
 
@@ -35,6 +36,7 @@ public class Day1 : SolverWithLineParser
     public override object GetAnswer2()
     => baskets.Select(calories => calories.Sum()).OrderByDescending(x => x).Take(3).Sum();
 
+    
     protected override void ParseLine(string line, int index, int lineCount)
     {
         if (!string.IsNullOrWhiteSpace(line))

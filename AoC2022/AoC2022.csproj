@@ -4,6 +4,10 @@
     <ProjectReference Include="..\AoC\AoC.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+<!--    <PackageReference Include="AoC" Version="0.0.2" />-->
+  </ItemGroup>
+
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>

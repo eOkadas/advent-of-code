@@ -1,11 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <ItemGroup>
-    <ProjectReference Include="..\AoC\AoC.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-<!--    <PackageReference Include="AoC" Version="0.0.2" />-->
+  <ItemGroup><!--    <PackageReference Include="AoC" Version="0.0.2" />-->
+  
+    <PackageReference Include="AoC" Version="0.0.4" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -6,8 +6,7 @@ namespace AoC2022.Days1to10;
 public class Day5 : SolverWithLineParser
 {
     private readonly List<string> _lines = new();
-    private List<List<char>> stacks;
-    
+
     public override void SetupRun(Automaton automaton)
     {
         automaton.Day = 5;

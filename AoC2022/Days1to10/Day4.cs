@@ -59,12 +59,3 @@ public class Day4 : SolverWithLineParser
         }
     }
 }
-
-public class ArgumentOutOfRangeExceptionWithCheck : ArgumentOutOfRangeException
-{
-    public static void ThrowIfNotRange(string[] array, int size)
-    {
-        if (array.Length > size)
-            throw new ArgumentOutOfRangeException();
-    }
-}

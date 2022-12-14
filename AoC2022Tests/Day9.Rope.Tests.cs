@@ -16,12 +16,12 @@ public class Day9Tests
         [InlineData(1,1,0,0)]
         public void ShouldNotMoveWhenTouching(int x, int y, int dx, int dy)
         {
-            var positionHead = new Coordinates(x, y);
-            var positionTail = new Coordinates(dx, dy);
+            var positionHead = new Day9.Coordinates(x, y);
+            var positionTail = new Day9.Coordinates(dx, dy);
             
             var result = new Day9().ComputeTailMovement(positionHead, positionTail);
             
-            Check.That(result).IsEqualTo(new Coordinates(dx, dy));
+            Check.That(result).IsEqualTo(new Day9.Coordinates(dx, dy));
         }
         
         [Theory]
@@ -31,12 +31,12 @@ public class Day9Tests
         [InlineData(0,2,0,0, 0, 1)]
         public void ShouldMoveLaterallyWhenOnSameLine(int x, int y, int dx, int dy, int expectedX, int expectedY)
         {
-            var positionHead = new Coordinates(x, y);
-            var positionTail = new Coordinates(dx, dy);
+            var positionHead = new Day9.Coordinates(x, y);
+            var positionTail = new Day9.Coordinates(dx, dy);
             
             var result = new Day9().ComputeTailMovement(positionHead, positionTail);
             
-            Check.That(result).IsEqualTo(new Coordinates(expectedX, expectedY));
+            Check.That(result).IsEqualTo(new Day9.Coordinates(expectedX, expectedY));
         }
     }
 }

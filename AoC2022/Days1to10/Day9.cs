@@ -112,28 +112,28 @@ U 20", 36, 2);
             return newCoordinates;
         }
     }
-}
 
-[DebuggerDisplay("{X}, {Y}")]
-public record Coordinates(int X, int Y)
-{
-    public bool IsTouching(Coordinates other)
+    [DebuggerDisplay("{X}, {Y}")]
+    public record Coordinates(int X, int Y)
     {
-        return Math.Abs(other.X - X) <= 1 && Math.Abs(other.Y - Y) <= 1;
-    }
+        public bool IsTouching(Coordinates other)
+        {
+            return Math.Abs(other.X - X) <= 1 && Math.Abs(other.Y - Y) <= 1;
+        }
 
-    public Coordinates NewCoordinatesTowards(Coordinates other)
-    {
-        var x = X;
-        var y = Y;
-        if (X < other.X)
-            x++;
-        else if (X > other.X)
-            x--;
-        if (Y < other.Y)
-            y++;
-        else if (Y > other.Y)
-            y--;
-        return new Coordinates(x, y);
+        public Coordinates NewCoordinatesTowards(Coordinates other)
+        {
+            var x = X;
+            var y = Y;
+            if (X < other.X)
+                x++;
+            else if (X > other.X)
+                x--;
+            if (Y < other.Y)
+                y++;
+            else if (Y > other.Y)
+                y--;
+            return new Coordinates(x, y);
+        }
     }
 }
